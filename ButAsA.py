@@ -13,5 +13,11 @@ with open ("./gameslist.csv", 'r') as games:
     gamereader = csv.reader(games)
     games = list(gamereader)
 
-print games[u], "but as a", genres[n],"."
+s = ""
+s = s.join(games[u])
+
+g = ""
+g = g.join(genres[n])
+
+print s, "but as a", g
 
